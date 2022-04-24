@@ -24,6 +24,17 @@ class UserService
     {
         user.setUsername = newUsername
     }
+
+    static getAllUsernames(users)
+    {
+        var sRet = ''
+
+        users.forEach((user) => {
+            sRet += user.getUsername + " "
+        })
+
+        return sRet
+    }
 }
 
 module.exports = UserService
