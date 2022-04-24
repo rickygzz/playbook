@@ -10,7 +10,7 @@ class Spiderman{
 
     get getInfo()
     {
-        return `Hey, I'm`
+        return `Hey, I'm ${this.actor} from ${this.studio} studio`
     }
 }
 
