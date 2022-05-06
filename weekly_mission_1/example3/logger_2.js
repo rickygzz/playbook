@@ -1,14 +1,14 @@
 /*
-  Al exportar una función/objeto así:
+  To export a function or object in this way:
 
   > module.exports.verbose
 
-  Estaremos exportando el contenido con el nombre `verbose`
+  We will be exporting its content with the name ``verbose
 
-  module.exports hará que puedas invocar esta función en otro script como:
+  module.exports will make the verbose function available within another script as:
   > const logger = require('./logger')
 
-  y usarla como:
+  use it as follows:
 
   > logger.verbose("Heeey!")
 */

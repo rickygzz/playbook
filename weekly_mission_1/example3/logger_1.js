@@ -1,10 +1,10 @@
 /*
-  Esto también es la declaración de una función
+  This is also a function declaration.
 
-  module.exports hará que puedas invocar esta función en otro script como:
+  module.exports will make the function available within another script as
   > const logger = require('./logger')
 
-  y usarla como:
+  use it as follows  :
 
   > logger("Heeey!")
 */
