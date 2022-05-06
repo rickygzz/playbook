@@ -4,11 +4,11 @@ class Pokemon{
     }
   
     sayHello(){
-      console.log(`Mi pokemon ${this.name} te saluda!!!`)
+      console.log(`My pokemon ${this.name} greets you!!!`)
     }
   
     sayMessage(msg){
-      console.log(`Mi pokemon ${this.name} dice: ${msg}`)
+      console.log(`My pokemon ${this.name} says: ${msg}`)
     }
 }
 
