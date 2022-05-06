@@ -1,24 +1,28 @@
-// 1. Creación de un objeto con propiedades
+// 1. Object creation with properties
 
-let myCar = new Object(); // Creación de un objeto
-myCar.make = 'Ford'; // Guardando un valor dentro del objeto creado
+// Object creation
+let myCar = new Object();
+
+// Saving value within recently created object
+myCar.make = 'Ford';
 myCar.model = 'Mustang';
 myCar.year = 1969;
 
-console.log(myCar) // Imprimiendo objeto
+// Printing object
+console.log(myCar)
 
-// 2. Declaración de un objeto con variables locales y públicas
+// 2. Object declaration with local and public variables
 
 const myModule = (() => {
-  // Variables de contexto local
-  const privateFoo = "Soy un valor privado, solo me usan dentro de este objeto"
+  // Local context variables
+  const privateFoo = "I am a private value, and can only be used within this object"
   const privateBar = [1,2,3,4]
-  const baz = "Soy un valor que va a ser expuesto"
+  const baz = "I am a value to be exposed"
 
-  // Variable para guardar las variables locales
+  // Variable to save local variables
   const exported = {
-    publicFoo: "Valor público, pueden verme desde donde me llamen",
-    publicBar: "Otro valor público",
+    publicFoo: "Public vlaue, can be seen wherever it is called from",
+    publicBar: "Another public value",
     publicBaz: baz
   }
 
