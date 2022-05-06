@@ -1,21 +1,23 @@
 class Logger {
     constructor(name) {
-      // this es una variable para referenciar el valor del contexto local de esta clase
-      this.name = name // Estás variables se le conocen como atributos
+      // `this` is a variable used to reference the value in the local context withtin this class.
+
+      // Theses variables are known as attributes.
+      this.name = name
     }
   
-    // método
-    // this.name es la variable que se guarda en el contexto local
-    // message es una variable que se le pasa al ejecutar este método
+    // Method
+    // this.name is the variable stores within the local context.
+    // message is a variable used within info method.
     info (message) {
-      console.log(`[Objeto con nombre: ${this.name}] info: ${message}`)
+      console.log(`[Object with name: ${this.name}] info: ${message}`)
     }
   
-    // método
+    // Method
     verbose (message) {
-      console.log(`[Objeto con nombre: ${this.name}] verbose: ${message}`)
+      console.log(`[Object with name: ${this.name}] verbose: ${message}`)
     }
 }
   
-// Esta clase se exporta en este módulo
+// Logger class is being exported as follows
 module.exports = Logger
