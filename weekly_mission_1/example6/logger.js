@@ -9,6 +9,9 @@ class Logger {
       console.log('[' + this.name + '] ' + message)
     }
 }
-  
-module.exports = new Logger('DEFAULT') // Nuevo objeto instanciado
-module.exports.Logger = Logger // Clase
+
+// Export new object instance
+module.exports = new Logger('DEFAULT')
+
+// Export class
+module.exports.Logger = Logger

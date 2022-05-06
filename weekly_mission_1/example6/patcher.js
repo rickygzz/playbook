@@ -1,9 +1,9 @@
 /*
- * Ten en cuenta:
- *    - require('./logger') te dará el objeto creado
- *    - require('./logger').Logger te regresará la clase
+ * Consider the following:
+ *    - require('./logger') will give you the created object
+ *    - require('./logger').Logger will return the class
  *
- * En este caso estamos agregando una función más al objeto instanciado, no a la clase.
+ * In this case we are adding function to the object instance (not the class)
  * */
 require('./logger').customMessage = function () {
     console.log('This is a new functionality')
