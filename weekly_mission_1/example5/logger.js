@@ -1,14 +1,16 @@
 class Logger {
     constructor(name) {
-      // Al crear este objeto se guardarán estos valores
+      // At object creation, these values will be saved
       this.count = 0
       this.name = name
     }
   
     log(message) {
-      this.count++ // se aumenta el contador interno al llamar este método
+      // Increase internal counter each time this method is called
+      this.count++;
       console.log('[' + this.name + '] ' + message)
     }
 }
 
-module.exports = new Logger('DEFAULT') // Instanciación del objeto y se exporta
+// Export object instance
+module.exports = new Logger('DEFAULT')
