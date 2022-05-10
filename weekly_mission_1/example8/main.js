@@ -1,4 +1,5 @@
-// EcmaScript modules necesita que los scripts tengan extensión mjs
-import * as loggerModule from './logger.js'
+// Import MyLogger class
+import MyLogger from './logger.js'
 
-console.log(loggerModule)
+const logger = new MyLogger('info')
+logger.log('Hello World')

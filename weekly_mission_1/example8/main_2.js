@@ -1,4 +1,8 @@
-// name clash
-import { log } from './logger.js'
-// const log = console.log // <- this would generate a "SyntaxError: Identifier 'log' has already been declared" error
-log('Hello world')
+/* Import module */
+import * as loggerModule from './logger.js'
+
+console.log(loggerModule)
+
+// Use it as follows:
+const obj = new loggerModule.default("a")
+obj.log("A message")
