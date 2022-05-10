@@ -1,5 +1,7 @@
 # Weekly Mission 1
 
+Projects developed within week 1 of NodeJS mission
+
 | No. | Name | Description | Repo link | Live view |
 | --- | ---- | ----------- | --------- | --------- |
 | 0 | Blog | Create a blog with Hugo | [Repo](https://github.com/rickygzz/my_launchx_blog) | [Live view](https://rickygzz.github.io/my_launchx_blog/) |
