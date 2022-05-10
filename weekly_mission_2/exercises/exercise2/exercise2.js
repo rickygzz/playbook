@@ -1,21 +1,19 @@
 /**
- * Toma la siguiente lista de explorers:
+ * Take the following list of explorers:
  * 
- * Sobre esta lista, realiza lo siguiente:
+ * With this list, do the following:
  * 
- * 1. Imprime el nombre (propiedad name) de cada explorer en la lista, usa
- *    FOR EACH
- * 2. Imprime el stack de cada explorer, usa FOR EACH
- * 3. Crea una nueva lista con las listas de stacks de cada explorer, usa
- *    MAP
- * 4. Obtén la lista de explorers que tengan en su stack "js", usa FILTER
- *    (para validar un elemento en un lista se usa el método includes)
- * 5. Busca el primer explorer que sea de la CDMX, usa FIND
- * 6. Obtén la suma de todos los exercises_completed, usa REDUCE
- * 7. Obtén la validación si al menos uno de los explorers tiene la
- *    propiedad exercisesFinished en frontend como true, usa SOME
- * 8. Obtén la validación si todos los explorers tienen la propiedad
- *    isFinished del onboarding como true. Usa EVERY.
+ * 1. Print each explorer's name (name property) in the list, use ForEach.
+ * 2. Print the explorer's stack using ForEach.
+ * 3. Create a new list with each explorers' list of stacks, using map.
+ * 4. Obtain a list of explorers who have "js" in their stack, using
+ *    filter.
+ * 5. Look for the first explorer from CDMX, use find.
+ * 6. Obtain the sum of all exercises_completed using reduce.
+ * 7. Obtain a validation if at least one of the explorers has the
+ *    property exercisesFinished in frontend mission as true, use some.
+ * 8. Obtain a validation if all explorers have the isFinished properties
+ *    in onboarding mission as true. Use every.
  */
 
 const explorers = [
@@ -83,7 +81,7 @@ const explorers = [
  * 1.
  */
 
-console.log("\n1. Imprime el nombre (propiedad name) de cada explorer en la lista, usa FOR EACH")
+console.log("\n1. Print each explorer's name (name property) in the list, use ForEach.")
 
 explorers.forEach(function(explorer)
 {
@@ -94,11 +92,11 @@ explorers.forEach(function(explorer)
 /**
  * 2.
  */
-console.log("\n2. Imprime el stack de cada explorer, usa FOR EACH")
+console.log("\n2. Print the explorer's stack using ForEach.")
 
 explorers.forEach(function(explorer)
 {
-    console.log("\nStack de " + explorer.name)
+    console.log("\nStack of " + explorer.name)
 
     console.log(explorer.stack)
 })
@@ -109,7 +107,7 @@ explorers.forEach(function(explorer)
  * Map object holds key-value pairs where values of any type can be
  * used
  */
-console.log("\n3. Crea una nueva lista con las listas de stacks de cada explorer, usa MAP")
+console.log("\n3. Create a new list with each explorers' list of stacks, using map.")
 let newList = new Map()
 
 explorers.forEach(function(explorer)
@@ -131,7 +129,7 @@ newList.forEach(function(val, key)
  * The function you pass to it should be predicate: a function that returns
  * true or false.
  */
-console.log("\n4. Obtén la lista de explorers que tengan en su stack \"js\", usa FILTER (para validar un elemento en un lista se usa el método includes)")
+console.log("\n4. Obtain a list of explorers who have \"js\" in their stack, using filter.")
 
 filtered = explorers.filter(x => x.stack.includes('js'))
 
@@ -149,7 +147,7 @@ console.log(filtered)
  * the provided testing function. If no values satisfy the testing
  * function, undefined is returned.
  */
-console.log("\n5. Busca el primer explorer que sea de la CDMX, usa FIND")
+console.log("\n5. Look for the first explorer from CDMX, use find.")
 
 // Alternate solution:
 // cdmx = explorers.find(element => element.city == 'CDMX')
@@ -170,7 +168,7 @@ console.log(cdmx)
  * The final result of running the reducer across all elements of the array
  * is a single value.
  */
-console.log("\n6. Obtén la suma de todos los exercises_completed, usa REDUCE")
+console.log("\n6. Obtain the sum of all exercises_completed using reduce.")
 
 sumExercises = explorers.reduce(function (prevVal, currentVal)
 {
@@ -191,7 +189,7 @@ console.log("Sum exercises " + sumExercises)
  * true.
  * 
  */
-console.log("\n7. Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME")
+console.log("\n7. Obtain a validation if at least one of the explorers has the property exercisesFinished in frontend mission as true, use some.")
 
 // Alternate solution
 // someValidation = explorers.some((element) => element.missions.frontend.exercisesFinished == true)
@@ -209,7 +207,7 @@ console.log("Validation: " + someValidation)
  * every() tests whether all elements in the array pass the test
  * implemented by the provided function. It returns a Boolean value.
  */
-console.log("\n8. Obtén la validación si todos los explorers tienen la propiedad isFinished del onboarding como true. Usa EVERY.")
+console.log("\n8. Obtain a validation if all explorers have the isFinished properties in onboarding mission as true. Use every.")
 
 
 // everyValidation = explorers.every(function(element)
