@@ -1,7 +1,7 @@
 /**
  * 1.
  */
-console.log("\n1. Crear clase vacía")
+console.log("\n1. Create an empty class.")
 class Person {
 }
 
@@ -10,14 +10,14 @@ console.log(Person)
 /**
  * 2.
  */
-console.log("\n2. Instanciar objetos de una clase")
+console.log("\n2. Create an object instance of a class.")
 personObject = new Person()
 console.log(personObject)
 
 /**
  * 3.
  */
-console.log("\n3. Instanciar Objeto con atributos")
+console.log("\n3. Create an object instance of a class with attributes.")
 class Student {
     constructor(name, age, courses)
     {
@@ -34,7 +34,7 @@ console.log(studentObject)
 /**
  * 4.
  */
-console.log("\n4. Métodos en los objetos")
+console.log("\n4. Methods in objects.")
 
 class Instructor {
     constructor(name, lastname, age, courses)
@@ -59,7 +59,7 @@ console.log(instructorObject.getFullName())
 /**
  * 5.
  */
-console.log("\n5. Atributos con valores por default")
+console.log("\n5. Attributes with default values.")
 
 class UserProfile
 {
@@ -153,7 +153,7 @@ console.log(`${frontEnd.getName} mission has ${frontEnd.getWeeksLeft} weeks left
 /**
  * 8.
  */
-console.log("\n8. Métodos static")
+console.log("\n8. Static methods")
 
 class StringHelper
 {
@@ -169,7 +169,7 @@ console.log(`${s} has ${StringHelper.len(s)} characters`)
 /**
  * 9.
  */
-console.log("\n9. Herencia")
+console.log("\n9. Inheritance")
 
 class StringHelperExtended extends StringHelper
 {
