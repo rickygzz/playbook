@@ -1,6 +1,6 @@
 /**
- * Tomando de referencia el ejercicio 1, convierte esos objetos a
- * definiciones de clases, trata de aplicar lo visto en los ejemplos.
+ * Considering exercise1 as a reference, convert those objects to
+ * class definitions. Try to apply all we have seen in the examples.
  */
 
  console.log("\n1. Repo class")
