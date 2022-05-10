@@ -9,4 +9,8 @@
 | 4 | example4 | Classes and Objects. Export a class and object instance from imported class. | [Repo](example4/) | |
 | 5 | example5 | Classes and Objects. Export an object instance and use imported object with custom constructor. | [Repo](example5/) | |
 | 6 | example6 | Classes and Objects. Export and object instance and a class. Add (patch) a function to object instance. | [Repo](example6/) | |
+| 7 | example7 | EcmaScript Modules ESM. Use export and import. | [Repo](example7/) | |
+| 8 | example8 | EcmaScript Modules ESM. Use expot default | [Repo](example8/) | |
+| 9 | example9 | Create Pokemon class and use CommonJS to import it | [Repo](example9/) | |
+| 10 | example10 | Create Pokemon class an duse EcmaScript to import it | [Repo](example10/) | |
 
