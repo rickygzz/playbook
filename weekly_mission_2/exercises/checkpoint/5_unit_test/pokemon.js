@@ -1,6 +1,9 @@
 /*
-Este ejemplo incluye dependencias. En tu línea de comando ve a este proyecto y ejecuta el comando `npm install` para descargar las dependencias, esto creará una carpeta node_modules
+This example includes dependencies. In the command line, run `npm install`
+to download and install all its dependencies. This will create a folder
+named `node_modules`
 */
+
 export default class Pokemon {
     constructor(name, type, age){
       this.name = name
@@ -18,5 +21,5 @@ export default class Pokemon {
     }
   }
   
-  const myPokemon = new Pokemon("Charmander", "Fuego", 10)
+  const myPokemon = new Pokemon("Charmander", "Fire", 10)
   console.log(myPokemon)
