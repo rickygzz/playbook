@@ -1,37 +1,37 @@
-// Usando objeto express
+// Using Express object
 const express = require('express')
 
-// App de Express
+// Express' app
 const app = express()
 
-// Puerto en que vamos a ver nuestra app: localhost:3000
+// Port going to be used by our app = localhost:3000
 const port = 3000
 
-// Path inicial, responderá a la url localhost:3000
+// Initial path, it will answer to the url localhost:3000
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-// Respondiendo texto
+// Answering with text
 // localhost:3000/launchx
 app.get('/launchx', (req, res) => {
-    res.send('Bienvenidos a launchx')
+    res.send('Welcome to LaunchX')
 })
 
-// Regresando un objeto
+// Returning objects
 app.get('/explorersInNode', (req, res) => {
     const explorer = { name: "Explorer", msg: 'Hello' }
     res.send(explorer)
 })
 
-// Query Params: Recibir parámetros por la url
+// Query Params: Receive parameters through URL
 // http://localhost:3000/explorers/carlo
 // req.params = {"explorerName": "carlo"}
 app.get('/explorers/:explorerName', (req, res) => {
     res.send(req.params)
 })
 
-// Con esto inicializamos esta app
+// We initialize the app with the following
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
