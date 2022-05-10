@@ -1,18 +1,11 @@
-const Pokemon = require('./pokemon')
+import * as loggerModule from './logger.js'
 
-const pikachu = new Pokemon("pikachu")
-const bulbasaur = new Pokemon("bulbasaur")
-const squirtle = new Pokemon("squirtle")
-const charmander = new Pokemon("charmander")
+console.log(loggerModule)
 
-pikachu.sayHello()
-pikachu.sayMessage("Heey!")
+// Printing LEVELS
+console.log(loggerModule.LEVELS)
 
-bulbasaur.sayHello()
-bulbasaur.sayMessage("Heey!")
+// Create an object instance
+var obj = new loggerModule.Logger("Test");
 
-charmander.sayHello()
-charmander.sayMessage("Heey!")
-
-squirtle.sayHello()
-squirtle.sayMessage("Heey!")
+obj.log("This is a test message");
