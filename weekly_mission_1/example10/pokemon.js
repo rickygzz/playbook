@@ -1,13 +1,13 @@
-export default class Pokemon{
-    constructor(name){
+export default class Pokemon {
+    constructor(name) {
       this.name = name
     }
   
-    sayHello(){
-      console.log(`Mi pokemon ${this.name} te saluda!!!`)
+    sayHello() {
+      console.log(`My pokemon ${this.name} greets you!!!`)
     }
   
-    sayMessage(msg){
-      console.log(`Mi pokemon ${this.name} dice: ${msg}`)
+    sayMessage(msg) {
+      console.log(`My pokemon ${this.name} says: ${msg}`)
     }
-  }
+}
