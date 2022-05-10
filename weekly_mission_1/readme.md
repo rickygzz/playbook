@@ -12,5 +12,5 @@
 | 7 | example7 | EcmaScript Modules ESM. Use export and import. | [Repo](example7/) | |
 | 8 | example8 | EcmaScript Modules ESM. Use expot default | [Repo](example8/) | |
 | 9 | example9 | Create Pokemon class and use CommonJS to import it | [Repo](example9/) | |
-| 10 | example10 | Create Pokemon class an duse EcmaScript to import it | [Repo](example10/) | |
+| 10 | example10 | Create Pokemon class and use EcmaScript to import it | [Repo](example10/) | |
 
