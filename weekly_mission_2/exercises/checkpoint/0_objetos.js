@@ -1,10 +1,10 @@
-// 1. Crear un objeto vacío
-console.log("1. Crear un objeto vacio")
-let objeto = {}
-console.log(objeto)
+// 1. Create an empty object
+console.log("1. Create an empty object")
+let myObject = {}
+console.log(myObject)
 
-// 2. Crear un objeto con propiedades
-console.log("\n2. Crear un objeto con propiedades")
+// 2. Create an object with properties
+console.log("\n2. Create an object with properties")
 explorer = {
     firstName: 'Ricardo',
     lastName: 'González'
@@ -12,8 +12,8 @@ explorer = {
 console.log(explorer)
 
 
-// 3. Crear un objeto con propiedades diferentes
-console.log("\n3. Crear un objeto con propiedades diferentes")
+// 3. Create an object with different properties.
+console.log("\n3. Create an object with different properties")
 explorer = {
     firstName: 'Ricardo',
     lastName: 'González',
@@ -26,25 +26,25 @@ console.log(explorer)
 console.log(explorer.hobbies)
 console.log(explorer['hobbies'])
 
-// 4. Crear un objeto con métodos
-console.log("\n4. Crear un objeto con métodos")
-const objetoMetodo = {
-    name: 'Objeto con métodos',
+// 4. Create an object with methods
+console.log("\n4. Create an object with methods")
+const objectWithMethods = {
+    name: 'Object with methods',
     pi: function(){
         return 3.1416;
     }
 }
-console.log(objetoMetodo.pi)
-console.log("Resultado: " + objetoMetodo.pi())
+console.log(objectWithMethods.pi)
+console.log("Result: " + objectWithMethods.pi())
 
 
-// 5. Crear un objeto que reciba parámetros.
-console.log("\n5. Crear un objeto con método que reciban parámetros")
-const objetoMetodo2 = {
-    name: 'Objeto con métodos',
+// 5. Create an object with a method that recieves parameters.
+console.log("\n5. Create an object with a method that recieves parameters")
+const objectWithMethods2 = {
+    name: 'Object with methods',
     sum: function(x,y){
         return x+y;
     }
 }
-console.log(objetoMetodo2.sum)
-console.log("Resultado: " + objetoMetodo2.sum(5,7))
+console.log(objectWithMethods2.sum)
+console.log("Result: " + objectWithMethods2.sum(5,7))
