@@ -108,17 +108,21 @@ explorers.forEach(function(explorer)
  * used
  */
 console.log("\n3. Create a new list with each explorers' list of stacks, using map.")
-let newList = new Map()
-
-explorers.forEach(function(explorer)
-{
-    newList.set(explorer.name, explorer.stack)
+let newList = explorers.map(function(item){
+  return { name: item.name, stack: item.stack }
 })
 
-newList.forEach(function(val, key)
-{
-    console.log(key + " = " + val)
-})
+console.log(newList)
+
+// explorers.forEach(function(explorer)
+// {
+//     newList.set(explorer.name, explorer.stack)
+// })
+
+// newList.forEach(function(val, key)
+// {
+//     console.log(key + " = " + val)
+// })
 
 
 /**
