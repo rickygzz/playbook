@@ -1,35 +1,34 @@
 /**
- * En JS existen operadores que nos facilitarán hacer ciertas
- * manipulaciones de estructuras de datos. Ve al ejemplo 1_operadores.js y
- * de igual forma crea un archivo de js para cada ejemplo para que lo
- * pruebes por separado.
+ * In JS, there are operators which will allow us manipulate some data
+ * structures. Go to the 1_operadores.js example and create a JS file
+ * so you can test it separately.
  */
-console.log("\n1. Ejemplo ForEach")
-const datos = [ 5, 4, 3, 2, 1 ]
+console.log("\n1. ForEach example")
+const data = [ 5, 4, 3, 2, 1 ]
 
-datos.forEach(function(elemento){
-    console.log("elemento = " + elemento)
+data.forEach(function(element){
+    console.log("element = " + element)
 })
 
 /**
  * 2. ForEach
  */
-console.log("\n2. Ejemplo For Each")
+console.log("\n2. ForEach example")
 
 sum = 0
-datos.forEach(function(elemento){
-    sum += elemento
-    console.log("elemento = " + elemento + ", sum = " + sum)
+data.forEach(function(element){
+    sum += element
+    console.log("element = " + element + ", sum = " + sum)
 })
-console.log("Suma total " + sum)
+console.log("Total sum = " + sum)
 
 /**
  * 3. ForEach
  */
-console.log("\n3. Ejemplo ForEach.")
+console.log("\n3. ForEach example")
 console.log("Print each element on array to uppercase")
 
-const names = ['Jospeh', 'Anna', 'Sandra', 'Jossie', 'Albert']
+const names = ['Joseph', 'Anna', 'Sandra', 'Jossie', 'Albert']
 
 names.forEach(function(item) {
     console.log(item.toUpperCase())
@@ -41,21 +40,21 @@ names.forEach(function(item) {
  * function you specify, and returns and array containing the values
  * returned by that function.
  */
-console.log("\n4. Ejemplo Map.")
+console.log("\n4. Map example")
 console.log("Returns an array indicating true if pair, otherwise false")
 
-mappedDatos = datos.map(function(item){
+mappedData = data.map(function(item){
     // return true if item is a pair
     return !(item % 2);
 })
 
-console.log("Array to be mapped: " + datos)
-console.log("      Mapped array: " + mappedDatos)
+console.log("Array to be mapped: " + data)
+console.log("      Mapped array: " + mappedData)
 
 /**
  * 5.
  */
-console.log("\n5. Ejemplo Map")
+console.log("\n5. Map example")
 console.log("Return array of names to uppercase")
 
 mappedNames = names.map(function(item){
@@ -67,7 +66,7 @@ console.log(mappedNames)
 /**
  * 6.
  */
-console.log("\n6. Ejemplo Map")
+console.log("\n6. Map example")
 console.log("Get array of initials.")
 
 mappedNames2 = names.map(function(item){
@@ -84,7 +83,7 @@ console.log(mappedNames2)
  * If the return value is true (or converts to true) then the element
  * passed to the predicate is a member of the returned subset.
  */
-console.log("\n7. Ejemplo de Filter")
+console.log("\n7. Filter example")
 console.log("Get an array of names starting with J")
 
 filteredNames = names.filter(function(item){
@@ -96,7 +95,7 @@ console.log(filteredNames)
 /**
  * 8.
  */
-console.log("\n8. Ejemplo de Filter")
+console.log("\n8. Filter example")
 console.log("Get an array of names that contain A or a")
 
 filteredNames = names.filter((item) => item.toUpperCase().includes("A"))
@@ -109,13 +108,14 @@ console.log(filteredNames)
  * The first is the function that performs the reduction operation.
  * The second (optional) is an initial value to pass to the function.
  */
-console.log("\n9. Ejemplo de Reduce")
+console.log("\n9. Reduce example")
 console.log("Get max value in array")
 
-max = datos.reduce(function(prevVal, y)
+max = data.reduce(function(prevVal, element)
 {
-    return (prevVal > y ? prevVal : y)
-}, 0
+    return (prevVal > element ? prevVal : element)
+},
+0
 )
 
 console.log(max)
@@ -126,10 +126,10 @@ console.log(max)
  * every() returns true if your predicate function returns true for all
  * elements in the array.
  */
-console.log("\n10. Ejemplo de Every")
+console.log("\n10. Every example")
 console.log("Check if all elements are positive")
 
-everyRetVal = datos.every(function(x){
+everyRetVal = data.every(function(x){
     return x > 0
 })
 
@@ -137,7 +137,7 @@ console.log(everyRetVal)
 
 console.log("Check if all elements are even")
 
-everyRetVal = datos.every(function(x){
+everyRetVal = data.every(function(x){
     return x % 2
 })
 
@@ -149,7 +149,7 @@ console.log(everyRetVal)
  * the provided testing function. If no values satisfy the testing
  * function, undefined is returned.
  */
-console.log("\n11. Ejemplo de Find")
+console.log("\n11. Find example")
 console.log("Return the first name starting with A")
 ret = names.find(function(item){
     return item.toUpperCase().startsWith("A")
@@ -160,7 +160,7 @@ console.log(ret)
 /**
  * 12.
  */
-console.log("\n12. Ejemplo de Find")
+console.log("\n12. Find example")
 console.log("Return the first name with length = 4")
 
 ret = names.find((item) => item.length == 4)
@@ -173,7 +173,7 @@ console.log(ret)
  * satisfies the provided testing function. Otherwise, it returns -1,
  * indicating that no element passed the test.
  */
-console.log("\n13. Ejemplo de FindIndex")
+console.log("\n13. FindIndex example")
 console.log("Return the index of the first item that ends with 'dra'")
 
 
@@ -187,7 +187,7 @@ console.log(ret)
  * which the predicate returns true, and returns false if and only if the
  * predicate returns false for all the alements of the array.
  */
-console.log("\n14. Ejemplo Some")
+console.log("\n14. Some example")
 console.log("Return true if there is at least one name ending with dra")
 
 ret = names.some(function(item){
@@ -199,7 +199,7 @@ console.log(ret)
 /**
  * 15.
  */
-console.log("\n15. Ejemplo de Sort")
+console.log("\n15. Sort example")
 
 console.log("Unsorted: " + names)
 console.log("  Sorted: " + names.sort())
@@ -207,7 +207,7 @@ console.log("  Sorted: " + names.sort())
 /**
  * 16.
  */
-console.log("\n16. Ejemplo de Sort")
+console.log("\n16. Sort example")
 console.log("Order list by age ascending")
 const users = [
     { name: 'A', age: 150 },
@@ -216,7 +216,7 @@ const users = [
     { name: 'D', age: 22 },
 ]
   
-users.sort((a, b) => { // podemos invocar una función
+users.sort((a, b) => { // we can invoke a function
     if (a.age < b.age) return -1
     if (a.age > b.age) return 1
     return 0
@@ -226,7 +226,7 @@ console.log(users) // sorted ascending
 
 console.log("Order list by age descending")
 
-users.sort((a, b) => { // podemos invocar una función
+users.sort((a, b) => { // we can invoke a function
     if (a.age < b.age) return 1
     if (a.age > b.age) return -1
     return 0
