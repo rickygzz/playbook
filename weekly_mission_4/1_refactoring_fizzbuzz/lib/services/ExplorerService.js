@@ -9,7 +9,7 @@ class ExplorerService
 
     static getAmountOfExplorersByMission(explorers, mission)
     {
-        explorers.filter(
+        const explorersInNode = explorers.filter(
             (explorer) => explorer.mission == mission
         );
 
