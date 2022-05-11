@@ -4,7 +4,7 @@ app.use(express.json());
 const port = process.env.PORT || 3000;
 
 // Require para usar Prisma
-const { PrismaClient } = require('./server/node_modules/@prisma/client');
+const { PrismaClient } = require('./node_modules/@prisma/client');
 const prisma = new PrismaClient();
 
 // Cors
