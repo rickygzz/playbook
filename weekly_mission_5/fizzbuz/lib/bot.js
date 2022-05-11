@@ -29,14 +29,6 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
 // messages.
 bot.on("message", (msg) => {
     const chatId = msg.chat.id;
-    const numberToApplyFb = parseInt(msg.text);
 
-    if(!isNaN(numberToApplyFb)){
-        const fizzbuzzTrick = ExplorerController.getFizzbuzzTrick(numberToApplyFb);
-
-        const responseBot = `Your number is: ${numberToApplyFb}. Validation: ${fizzbuzzTrick}`;
-        bot.sendMessage(chatId, responseBot);
-    } else {
-        bot.sendMessage(chatId, "Please send a valid number");
-    }
+    bot.sendMessage(chatId,  ExplorerController.getFizzbuzzTrick(msg.text));
 });

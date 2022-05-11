@@ -33,7 +33,15 @@ class ExplorerController
 
     static getFizzbuzzTrick(number)
     {
-        return FizzbuzzService.applyValidationInNumber(number);
+        const numberToApplyFb = parseInt(number);
+    
+        if(!isNaN(numberToApplyFb)){
+            const fizzbuzzTrick = FizzbuzzService.applyValidationInNumber(numberToApplyFb);
+    
+            return `Your number is: ${numberToApplyFb}. Validation: ${fizzbuzzTrick}`;
+        }
+        
+        return "Please send a valid number";
     }
 }
 
