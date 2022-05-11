@@ -1,8 +1,13 @@
 const TelegramBot = require("node-telegram-bot-api");
 const ExplorerController = require("./controllers/ExplorerController");
 
-// replace the value below with the Telegram token you receive from @BotFather
-const token = "";
+// Replace the value below with the Telegram token you receive from @BotFather
+require('dotenv').config()
+if(!process.env.token){
+    throw new Error('There is no configuration with Telegram token')
+}  
+
+const token = process.env.token;
 
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, {polling: true});
@@ -27,11 +32,11 @@ bot.on("message", (msg) => {
     const numberToApplyFb = parseInt(msg.text);
 
     if(!isNaN(numberToApplyFb)){
-        const fizzbuzzTrick = ExplorerController.applyFizzbuzz(numberToApplyFb);
-        const responseBot = `Tu número es: ${numberToApplyFb}. Validación: ${fizzbuzzTrick}`;
+        const fizzbuzzTrick = ExplorerController.getFizzbuzzTrick(numberToApplyFb);
+
+        const responseBot = `Your number is: ${numberToApplyFb}. Validation: ${fizzbuzzTrick}`;
         bot.sendMessage(chatId, responseBot);
     } else {
-        bot.sendMessage(chatId, "Envía un número válido");
+        bot.sendMessage(chatId, "Please send a valid number");
     }
-
 });
