@@ -1,10 +1,10 @@
-const Reader = require('../../lib/utils/Reader')
+const Reader = require("../../lib/utils/Reader");
 
-describe("Tests para Reader", () => 
+describe("Reader tests", () => 
 {
-    test("Requerimiento 1: Leer archivo", () => {
-        explorers = Reader.readJsonFile("./explorers.json");
+    test("Requirement 1: Read a file", () => {
+        const explorers = Reader.readJsonFile("./explorers.json");
 
         expect(explorers.length).toBe(15);
-    })
+    });
 });

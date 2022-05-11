@@ -9,11 +9,11 @@ class ExplorerService
 
     static getAmountOfExplorersByMission(explorers, mission)
     {
-        explorers.filter(
+        const amountOfExplorers = explorers.filter(
             (explorer) => explorer.mission == mission
         );
 
-        return explorersInNode.length
+        return amountOfExplorers.length;
     }
 
     static getExplorersUsernamesByMission(explorers, mission)
